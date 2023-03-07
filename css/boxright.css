@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
+
+.box-right {
+  color: #000;
+}
+
+@keyframes rolc {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.box-play {
+  /* border: 2px solid red; */
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box-play i {
+  font-size: 40px;
+  color: blue;
+}
+
+.box-play i:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.box-play img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.circular_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  animation: rolc 30s linear infinite;
+}
+
+.circular_image img {
+  width: 100%;
+}
+
+.box-image-right {
+  height: 300px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.posted {
+  margin-top: .5em;
+  margin-left: 1.2em;
+  color: gray;
+  font-size: 1em;
+}
+
+.marquee {
+  color: #000;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  font-size: 14px;
+  overflow: -webkit-marquee;
+  -webkit-marquee: up infinite slide;
+  -webkit-marquee-speed: 280;
+}
+
+pre {
+  font-family: "Verdana";
+  font-weight: normal;
+  white-space: pre-line;
+}
+
+.item-src {
+  margin-top: 24px;
+}
+
+.item-other i:hover {
+  color: black;
+  scale: 1.1;
+}
